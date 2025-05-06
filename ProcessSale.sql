@@ -11,7 +11,7 @@ begin
     
     select medicationId into v_medicationId
     from Prescriptions
-    where prescriptionId = p_prescritionId;
+    where prescriptionId = p_prescriptionId;
     
     update Inventory
     set quantityAvailable = quantityAvailable - p_quantitySold,
